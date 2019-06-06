@@ -1,0 +1,27 @@
+#include<iostream>
+#include<cmath>  //to use pow function
+using namespace std;
+
+
+int main() {
+
+    int i,n,bin,exp=0,sum=0,val=0;
+    cin>>n;
+
+    for(i=1;i<=n;i++){  //to print n binary numbers, one in each row 
+        cin>>bin;
+        
+        while(bin>0){
+            val=(bin%10)*pow(2,exp); //extract each digit and multiply it with respective powers
+            bin=bin/10;
+            exp++;
+            sum=sum+val;  //calculate the decimal equivalent of every binary number
+        }
+
+        cout<<sum<<endl;   //Print every decimal equivalent in each row
+        sum=0;
+        exp=0;
+    }
+
+    return 0;
+}
