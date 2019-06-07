@@ -1,0 +1,53 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    char oper;
+    int n1,n2;
+    
+    while(1){
+    
+    cin>>oper;
+
+        if((oper=='+')||(oper=='-')||(oper=='*')||(oper=='/')||(oper=='%'))
+        {
+        cin>>n1>>n2;
+        
+        if(oper=='+'){
+            cout<<(n1+n2)<<endl;
+           
+        }  
+
+
+        else if(oper=='-'){
+            cout<<(n1-n2)<<endl;
+            
+        }
+
+        else if(oper=='*'){
+            cout<<(n1*n2)<<endl;
+            
+        }
+
+        else if(oper=='/'){
+            cout<<(n1/n2)<<endl;
+            
+        }
+
+        else if(oper=='%'){
+            cout<<(n1%n2)<<endl;
+            
+        }
+    }
+
+    else if((oper=='x')||oper=='X'){
+        return(0);
+    }
+
+    else
+        cout<<"Invalid operation. Try again.";
+   }
+
+return 0;
+}
