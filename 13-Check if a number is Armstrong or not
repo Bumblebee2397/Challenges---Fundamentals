@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int val,n1,sum=0,n2;  //n1 will lose its identity in the while() loop, hence, n2 is used
+    cin>>n1;
+    n2=n1;
+
+    while(n1>0){
+        
+        val=n1%10;
+        sum=sum+(val*val*val);
+        n1=n1/10;
+    }
+
+    if(sum==n2)   //here we equate it to n2 as n1 is reduced to 0 in the while loop
+        cout<<"True";
+
+    else
+        cout<<"False";
+
+
+return 0;
+}
