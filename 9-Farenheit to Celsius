@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    signed int min,max,step,i;
+    signed int cel;
+    cin>>min>>max>>step;
+     i=min;
+
+    while(i<=max){
+        cout<<i<<" ";
+        cel=((float)5/9)*(i-32); //NOTE that the (5/9)=0 as (int/int)=int (0), hence we typecast one of the values as float.
+        cout<<cel<<endl;        //The entire expression is evaluated to float. When kept in int vairable, it is automatically rounded off.
+        i=i+step;
+    }
+
+return 0;
+}
