@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+
+    int i,j=1,n1,n2,val,counter=0;
+    cin>>n1>>n2;
+
+    for(i=1;i<=(n1+counter);i++){
+
+        val=(3*i)+2;
+
+        if(val%(n2)!=0){
+            cout<<val<<endl;
+        }
+
+        else
+            counter++;
+    }
+
+return 0;
+}
