@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+   int n,digit,counter=0,val=0;
+   cin>>n>>digit;
+
+   while(n>0){
+
+        val=n%10;
+        n=n/10;
+
+        if(val==digit){
+            
+            counter++;
+    }
+
+}
+
+cout<<counter;
+
+return 0;
+}
