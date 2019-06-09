@@ -17,25 +17,21 @@ int main(){
         s2=n;
         hyp=(n/2)*(n/2)+1;
         
-        if((hyp*hyp)==(s1*s1+s2*s2))
-                cout<<s1<<" "<<hyp;
-        else
-                cout<<-1;
-    }
+        cout<<s1<<" "<<hyp;
 
+    }
+        
     else{
 
         s1=(((n+1)/2)*((n+1)/2))-(((n-1)/2)*((n-1)/2));
         s2=2*((n+1)/2)*((n-1)/2);
         hyp=(((n+1)/2)*((n+1)/2))+(((n-1)/2)*((n-1)/2));
-         if((hyp*hyp)==(s1*s1+s2*s2))
-                cout<<s2<<" "<<hyp;
-        else
-                cout<<-1;
-
+        
+        cout<<s2<<" "<<hyp;
     }
 
 }
 
 return 0;
 }
+
